@@ -1,6 +1,7 @@
 # ``MKNetwork``
 
-<!--@START_MENU_TOKEN@-->Summary<!--@END_MENU_TOKEN@-->
+Created By Mradul Kumar.
+This framework is a part of learning process of iOS framework creation & created for a test project.
 
 ## Overview
 

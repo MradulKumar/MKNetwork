@@ -12,6 +12,8 @@
 		922C5AC52BFB77D9008FB905 /* MKNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C5AC42BFB77D9008FB905 /* MKNetworkTests.swift */; };
 		922C5AC62BFB77D9008FB905 /* MKNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 922C5AB82BFB77D9008FB905 /* MKNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		922C5AD12BFB7AD3008FB905 /* MKNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C5AD02BFB7AD3008FB905 /* MKNetwork.swift */; };
+		922C5AD32BFB7E61008FB905 /* MKHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922C5AD22BFB7E61008FB905 /* MKHeaders.swift */; };
+		922C5AD82BFBBFF5008FB905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922C5AD72BFBBFF5008FB905 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		922C5ABF2BFB77D9008FB905 /* MKNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		922C5AC42BFB77D9008FB905 /* MKNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKNetworkTests.swift; sourceTree = "<group>"; };
 		922C5AD02BFB7AD3008FB905 /* MKNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKNetwork.swift; sourceTree = "<group>"; };
+		922C5AD22BFB7E61008FB905 /* MKHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKHeaders.swift; sourceTree = "<group>"; };
+		922C5AD72BFBBFF5008FB905 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922C5AD82BFBBFF5008FB905 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,7 @@
 				922C5AB72BFB77D9008FB905 /* MKNetwork */,
 				922C5AC32BFB77D9008FB905 /* MKNetworkTests */,
 				922C5AB62BFB77D9008FB905 /* Products */,
+				922C5AD62BFBBFF5008FB905 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +81,7 @@
 			children = (
 				922C5AB82BFB77D9008FB905 /* MKNetwork.h */,
 				922C5AD02BFB7AD3008FB905 /* MKNetwork.swift */,
+				922C5AD22BFB7E61008FB905 /* MKHeaders.swift */,
 				922C5AB92BFB77D9008FB905 /* MKNetwork.docc */,
 			);
 			path = MKNetwork;
@@ -86,6 +93,14 @@
 				922C5AC42BFB77D9008FB905 /* MKNetworkTests.swift */,
 			);
 			path = MKNetworkTests;
+			sourceTree = "<group>";
+		};
+		922C5AD62BFBBFF5008FB905 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				922C5AD72BFBBFF5008FB905 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				922C5AD12BFB7AD3008FB905 /* MKNetwork.swift in Sources */,
+				922C5AD32BFB7E61008FB905 /* MKHeaders.swift in Sources */,
 				922C5ABA2BFB77D9008FB905 /* MKNetwork.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +242,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -292,6 +309,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -349,6 +367,7 @@
 		922C5ACA2BFB77D9008FB905 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -380,6 +399,7 @@
 		922C5ACB2BFB77D9008FB905 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
